@@ -22,7 +22,7 @@
   }
 
   h1 {
-    @apply text-7xl;
+    @apply text-5xl;
   }
 
   h2 {
@@ -36,10 +36,10 @@
 
 @layer components {
   .pale {
-    @apply border border-[rgba(255,255,255,0.15)];
+    @apply border border-white/15;
   }
 
-  .card {
-    @apply bg-black/40 backdrop-blur-md p-6 rounded-xl flex flex-col justify-center items-center gap-3;
+  .blurred {
+    @apply bg-black/40 backdrop-blur-md rounded-xl;
   }
 }
