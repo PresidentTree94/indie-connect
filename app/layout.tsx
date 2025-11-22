@@ -29,7 +29,10 @@ export default function RootLayout({
           </Link>
           <div className="flex gap-6 font-medium">
             <Link href="/projects" className="hover:text-primary transition-colors">Projects</Link>
-            <a>Ideas</a>
+            <Link href="/creators" className="hover:text-primary transition-colors">Creators</Link>
+            <a>Messages</a>
+            <a>Notifications</a>
+            <a>Settings</a>
           </div>
           <div className="flex gap-3">
             <button className="px-4 py-2 text-emphasis font-medium rounded-xl border border-emphasis">Create Project</button>
