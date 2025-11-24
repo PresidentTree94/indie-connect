@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: rgb(9, 9, 11);
-  --color-emphasis: rgb(250, 250, 250);
+  --color-background: hsl(240, 10%, 4%);
+  --color-emphasis: hsl(0, 0%, 98%);
+  --color-portrait: hsl(240, 5%, 20%);
+
   --color-basic: rgb(161, 161, 170);
   --color-card: rgb(23, 23, 28);
   --color-primary: rgb(33, 196, 93);
@@ -36,16 +38,52 @@
 
 @layer components {
   .pale {
-    @apply border border-white/15;
+    @apply border-white/15;
   }
 
   .blurred {
     @apply bg-black/40 backdrop-blur-md rounded-xl;
   }
 
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
   .card {
     @apply border border-white/15 bg-card rounded-xl p-6;
   }
+
+  .highlight {
+    @apply text-primary bg-primary/20 rounded-xl font-semibold;
+  }
+
+  .skill {
+    @apply bg-secondary/20 hover:bg-secondary/35;
+  }
+
+  .btn-md {
+    @apply py-2 px-4 rounded-xl;
+  }
+
+  .btn-sm {
+    @apply py-1 px-2 rounded-xl;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-background;
+  }
+
+  .btn-outline {
+    @apply text-emphasis border border-white/15 hover:bg-white/10;
+  }
+
+  /*For avatar images*/
+
+  .portrait {
+    @apply rounded-full border-background border-2 bg-portrait;
+  }
+
+  /*For browsing heading and criteria*/
 
   .sorted {
     @apply uppercase text-xs font-bold font-display;

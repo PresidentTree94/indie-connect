@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintbrush, faMusic, faPenNib } from "@fortawesome/free-solid-svg-icons";
 import Browse from "@/shared/Browse";
+import Creator from "@/components/Creator";
 
 export default function Creators() {
   return (
@@ -36,7 +37,14 @@ export default function Creators() {
           <button className="criterion">Unavailable</button>
         </div>
       </>}
-      cards={<></>}
+      cards={<>
+        <Creator />
+        <Creator />
+        <Creator />
+        <Creator />
+        <Creator />
+        <Creator />
+      </>}
     />
   );
 }
