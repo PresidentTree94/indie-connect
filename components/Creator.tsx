@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faClock, faCircle } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Badge from "./Badge";
 
 export default function Creator() {
   return (
@@ -10,7 +11,7 @@ export default function Creator() {
           <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-24 portrait" />
           <h3 className="my-2 group-hover:text-primary transition-colors duration-300">PresidentTree94</h3>
           <div className="flex gap-2 text-xs font-semibold">
-            <span className="btn-sm border border-blue-400/30 text-blue-400 bg-blue-400/10">Code</span>
+            <Badge role="code" />
           </div>
         </div>
         <p className="my-4">Possible description possible description possible description possible description.</p>

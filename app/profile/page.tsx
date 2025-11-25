@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faComment, faUserPlus, faLink, faBolt, faCodeFork, faClock, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import Badge from "@/components/Badge";
 import Skills from "@/components/Skills";
 
 export default function Profile() {
@@ -15,9 +16,9 @@ export default function Profile() {
             <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-30 portrait mb-4" />
             <h3>PresidentTree94</h3>
             <div className="mt-3 mb-6 flex gap-2 text-xs font-semibold">
-              <span className="btn-sm border border-blue-400/30 text-blue-400 bg-blue-400/10">Code</span>
+              <Badge role="code" />
             </div>
-            <div className="flex gap-2 text-xs mb-6">
+            <div className="flex items-center gap-2 text-xs mb-6">
               <span className="btn-sm highlight">Available</span>
               <span className="btn-sm pale border uppercase text-emphasis font-semibold">EST (UTC-5)</span>
             </div>

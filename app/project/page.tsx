@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faShareNodes, faCalendar, faPlay, faUserGroup, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faShareNodes, faCalendar, faPlay, faUserGroup, faClock, faLink, faBullhorn, faMessage } from "@fortawesome/free-solid-svg-icons";
+import Badge from "@/components/Badge";
 import Skills from "@/components/Skills";
 
 export default function Detail() {
@@ -49,11 +50,11 @@ export default function Detail() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2>Open Roles</h2>
+            <h2 className="flex items-center gap-2"><FontAwesomeIcon icon={faUserGroup} className="!w-auto !h-6 text-primary" />Open Roles</h2>
             <div className="card flex-center justify-between hover:border-primary/40 transition-colors group">
               <div>
                 <div className="text-xs flex items-center gap-3">
-                  <span className="btn-sm highlight border border-primary/30">Role</span>
+                  <Badge role="code" />
                   <span className="flex items-center gap-1"><FontAwesomeIcon icon={faClock} className="!w-auto !h-3" />Schedule</span>
                 </div>
                 <h3 className="my-2 group-hover:text-primary transition-colors">Position</h3>
@@ -67,7 +68,7 @@ export default function Detail() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2>Recent Updates</h2>
+            <h2 className="flex items-center gap-2"><FontAwesomeIcon icon={faBullhorn} className="!w-auto !h-6 text-primary" />Recent Updates</h2>
             <div className="card p-4 flex items-start gap-3">
               <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-8 portrait" />
               <div>
@@ -81,21 +82,58 @@ export default function Detail() {
           </div>
         </section>
         <section className="flex flex-col gap-8">
-          <div className="card">
+          <div className="card flex flex-col gap-4">
             <h3>The Team</h3>
+            <div className="flex items-center gap-3">
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <div>
+                <p className="font-bold text-emphasis">PresidentTree94</p>
+                <div className="text-xs mt-1 flex gap-2">
+                  <span className="btn-sm bg-white/10">Creator</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <div>
+                <p className="font-bold text-emphasis">PresidentTree94</p>
+                <div className="text-xs mt-1 flex gap-2">
+                  <span className="btn-sm bg-white/10">Creator</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <div>
+                <p className="font-bold text-emphasis">PresidentTree94</p>
+                <div className="text-xs mt-1 flex gap-2">
+                  <span className="btn-sm bg-white/10">Creator</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="card">
             <h3>Tools & Tech</h3>
             <Skills />
           </div>
-          <div className="card">Links</div>
+          <div className="card flex flex-col gap-3">
+            <a href="https://github.com/PresidentTree94/indie-connect" className="btn-outline btn-md font-medium flex items-center gap-2"><FontAwesomeIcon icon={faLink} className="!w-auto !h-4" />GitHub</a>
+          </div>
         </section>
         <section className="col-span-full">
           <div>
             <h2>Gallery</h2>
+            <div className="columns-4 gap-4 mt-4 mb-8">
+              <img src="project.png" className="rounded-xl mb-4" />
+              <img src="banner.png" className="rounded-xl mb-4" />
+              <img src="hero.png" className="rounded-xl mb-4" />
+              <img src="project.png" className="rounded-xl mb-4" />
+              <img src="banner.png" className="rounded-xl mb-4" />
+              <img src="hero.png" className="rounded-xl mb-4" />
+            </div>
           </div>
           <div>
-            <h2>Discussion</h2>
+            <h2 className="flex items-center gap-2"><FontAwesomeIcon icon={faMessage} className="!w-auto !h-6 text-primary" />Discussion</h2>
           </div>
         </section>
       </main>
