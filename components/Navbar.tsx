@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="blurred flex-center justify-between px-8 h-16 fixed top-0 w-full z-1">
       <Link href="/" className="flex items-center gap-2">
-        <span className="w-8 h-8 flex-center btn-primary rounded-xl font-bold text-xl font-display">I</span>
+        <span className="w-8 h-8 flex-center btn-primary rounded-xl font-bold text-xl font-display">IC</span>
         <h3>Indie Connect</h3>
       </Link>
       <div className="flex gap-6 font-medium">

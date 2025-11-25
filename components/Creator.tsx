@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Creator() {
   return (
-    <Link href="/profile" className="card p-0 overflow-hidden hover:border-primary/40 transition-colors duration-300 group">
+    <Link href="/profile" className="card p-0 hover:border-primary/40 transition-colors duration-300 group">
       <div className="p-6">
         <div className="flex flex-col items-center">
           <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-24 portrait" />

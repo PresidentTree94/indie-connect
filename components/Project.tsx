@@ -29,9 +29,9 @@ export default function Project() {
       <div className="flex-center justify-between pt-4 px-6 pb-6 border-t pale">
         <div>
           <div className="flex -space-x-2">
-            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-7 portrait hover:scale-110 transition-transform"/>
-            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-7 portrait hover:scale-110 transition-transform"/>
-            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-7 portrait hover:scale-110 transition-transform"/>
+            <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-7 portrait hover:scale-110 transition-transform"/>
+            <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-7 portrait hover:scale-110 transition-transform"/>
+            <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-7 portrait hover:scale-110 transition-transform"/>
           </div>
           <span className="text-xs mt-1">Created XXX XX, XXXX</span>
         </div>

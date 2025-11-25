@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dm_sans.variable} ${space_grotesk.variable}`}>
         <Navbar />
-        <main className="mt-16 px-8 py-20 max-w-7xl mx-auto flex flex-col gap-20">{children}</main>
+        {children}
       </body>
     </html>
   );

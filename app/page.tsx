@@ -4,7 +4,7 @@ import Project from "@/components/Project";
 
 export default function Home() {
   return (
-    <>
+    <main className="mt-16 px-8 py-20 max-w-7xl mx-auto flex flex-col gap-20">
       <section className="grid grid-cols-2 gap-12">
         <div className="flex flex-col justify-center gap-8">
           <h1 className="text-7xl">Build cool stuff <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">together.</span></h1>
@@ -15,10 +15,10 @@ export default function Home() {
           </div>
           <div className="mt-8 flex gap-8 items-center">
             <div className="flex -space-x-3">
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-10 portrait" />
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-10 portrait" />
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-10 portrait" />
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" className="w-10 portrait" />
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
+              <img src="https://avatars.githubusercontent.com/u/196358235?v=4" className="w-10 portrait" />
             </div>
             <p><b className="text-emphasis">2,400+</b> creators joined this week</p>
           </div>
@@ -87,6 +87,6 @@ export default function Home() {
           <Project />
         </div>
       </section>
-    </>
+    </main>
   );
 }
